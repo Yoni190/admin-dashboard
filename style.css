@@ -6,76 +6,31 @@
 ul {
     list-style: none;
 }
-.container {
+.card, .stuff, .news, .cards, .trending{
+    padding: 10px;
+}
+.container, .menu, .menu li, .header, .main, .cards{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+}
+.bottom, .left-header, .right-header, .logo, .top, .search, .account-info, .trending div, .card ul{
+    display: flex;
 }
 .header, .main{
     grid-column-start: 2;
     grid-column-end: 4;
 }
-.header {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px;
+.account-info .profile-pic {
+    height: 50px;
+    width: 50px;
 }
-.cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
+.bottom, .left-header, .right-header{
+    justify-content: space-between;
+}
+.greeting, .articles h2 {
     text-align: left;
-}
-.article-title {
-    font-size: 24px;
-    font-weight: bold;
-}
-.trending div {
-    display: flex;
-    padding: 10px;
-    padding-left: 30px;
-}
-.profile {
-    display: flex;
-    flex-direction: column;
-}
-.trending img {
-    width: 45px;
-    height: 45px;
-}
-.main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 10px;
-}
-.sidebar {
-    color: white;
-    border: 1px black solid;
-    background-color: blueviolet;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.main {
-    background-color: lightgray;
-    padding: 30px;
-}
-.card {
-    border-radius: 10px;
-    border-left: 10px yellow solid
-}
-.card, .stuff, .news, .cards, .trending{
-    padding: 10px;
 }
 .card, .cool-stuff, .news {
     background-color: white;
-}
-.news-text {
-    border-bottom: 1px black ridge;
-    padding-bottom: 10px;
-    font-size: 16px;
-    color: rgb(85, 84, 84)
-}
-.end {
-    border-style: none;
 }
 .site, .tegan {
     border-top-left-radius: 20px;
@@ -85,169 +40,161 @@ ul {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.trending {
-    border-radius: 20px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.top {
-    display: flex;
-    justify-content: space-between;
-}
-.bottom, .left-header, .right-header{
-    display: flex;
-    justify-content: space-between;
-}
-.account-info {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.right-header{
-    width: 40%;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-}
-.account-info p {
-    font-size: 24px;
-    font-weight: bold;
-}
-input {
-    height: 35px;
-    width: 80%;
-    border-radius: 30px;
-    border: 2px #cbd5e1 solid;
-    background-color: #cbd5e1;
-}
-.card img {
-    width: 30px;
-    height: 30px;
-}
-.card  {
-    display: grid;
-}
-.card ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-button {
-    width: 100px;
-    max-height: 50px;
-    padding: 5px;
-    border-radius: 20px;
-    font-size: 18px;
-    background-color: blue;
-    color: white;
-    border-style: none;
-    justify-self: end;
-}
-.articles h2 {
-    text-align: left;
-}
-.news-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
-}
-.news {
-    padding: 20px;
-}
-.menu {
-    display: grid;
-    height: 50%;
-    grid-template-rows: 1fr 1fr;
-    font-size: 20px;
-}
-.boring-stuff {
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.menu img {
-    display: inline;
-    width: 30px;
-    height: 30px;
-}
-.top img {
-    width: 30px;
-    height: 30px;
-}
-.left-header img {
-    width: 75px;
-    height: 75px;
-}
-.greeting {
-    text-align: left;
-}
-.logo h1 {
-    display: inline;
-    
-}
-.account-info .profile-pic {
-    width: 50px;
-    height: 50px;
-}
-.account-name {
-    font-size: 30px;
-}
-.logo {
-    display: flex;
-    align-items: center;
-}
-.menu li {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    padding: 10px;
-}
-.menu img {
-    justify-self: end;
-}
-.settings {
-    margin-top: 50px;
-}
-.search {
-    display: flex;
-    align-self: center;
-    width: 40%;
-}
-.account-info {
-    display: flex;
-    justify-content: space-around;
-    width: 20%;
-}
-/*ul {
-    list-style: none;
-}
-.header, .container, .main, .cards{
-    display: grid;
-}
-.header{
-    grid-template-rows: 1fr 1fr;
-}
-.container {
-    grid-template-columns: 1fr 3fr;
-}
-.sidebar {
-    background-color: rgb(76, 63, 253);
-}
-.main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: lightgray;
-    padding: 20px;
-}
-.cards {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
-}
-.card {
-    background-color: white;
-    border: 1px wheat solid;
-    border-radius: 10px;
-}
-.right {
-    grid-column-start: 2;
-    grid-column-end: 3;
-} */
+    .container {
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+    .sidebar {
+        background-color: blueviolet;
+        border: 1px black solid;
+        color: white;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+        .logo {
+            align-items: center;
+        }
+            .logo h1 {
+                display: inline;
+            }
+            .menu {
+                font-size: 20px;
+                grid-template-rows: 1fr 1fr;
+                height: 50%;
+            }
+                .boring-stuff {
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+                .menu img {
+                    height: 30px;
+                    width: 30px;
+                    justify-self: end;
+                }
+                .menu li {
+                    gap: 30px;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 10px;
+                    padding-right: 100px;
+                }
+                .settings {
+                    margin-top: 50px;
+                }
+    .header {
+        grid-template-rows: 1fr 1fr;
+        padding: 20px;
+    }
+        .top {
+            justify-content: space-between;
+        }
+            .top img {
+                height: 30px;
+                width: 30px;
+            }
+            .search {
+                align-self: center;
+                width: 40%;
+            }
+            .search img {
+                margin-top: 3px;
+            }
+            input {
+                background-color: #cbd5e1;
+                border: 2px #cbd5e1 solid;
+                border-radius: 30px;
+                max-height: 10px;
+                padding: 15px;
+                width: 80%;
+            }
+            .account-info {
+                align-items: center;
+                justify-content: space-around;
+                width: 20%;
+            }
+                .account-info p {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            .left-header img {
+                height: 75px;
+                width: 75px;
+            }
+            .account-name {
+                font-size: 30px;
+            }
+            .right-header{
+                align-items: center;
+                justify-content: space-around;
+                width: 40%;
+            }
+                button {
+                    background-color: blue;
+                    border-style: none;
+                    border-radius: 20px;
+                    color: white;
+                    font-size: 18px;
+                    justify-self: end;
+                    max-height: 50px;
+                    padding: 5px;
+                    width: 100px;
+                }
+    .main {
+        background-color: lightgray;
+        gap: 10px;
+        grid-template-columns: 3fr 1fr;
+        padding: 30px;
+    }
+        .cards{
+            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            text-align: left;
+        }
+            .card {
+                border-left: 10px yellow solid;
+                border-radius: 10px;
+            }
+                .card img {
+                    height: 30px;
+                    width: 30px;
+                }
+                .card ul {
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                }
+                .article-title {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+        .news {
+            padding: 20px;
+        }
+            .news-title {
+                font-size: 24px;
+                font-weight: bold;
+                text-align: left;
+            }
+            .news-text {
+                border-bottom: 1px black ridge;
+                color: rgb(85, 84, 84);
+                font-size: 16px;
+                padding-bottom: 10px;
+            }
+            .end {
+                border-style: none;
+            }
+        .trending {
+            border-radius: 20px;
+        }
+            .trending div {
+                padding: 10px;
+                padding-left: 30px;
+            }
+            .trending img {
+                height: 45px;
+                width: 45px;
+            }
+            .profile {
+                flex-direction: column;
+            }
