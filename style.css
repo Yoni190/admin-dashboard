@@ -1,7 +1,7 @@
  * {
    margin: 0;
    padding: 0;
-   box-sizing: border-box; 
+   box-sizing: border-box;
 }
 ul {
     list-style: none;
@@ -72,25 +72,39 @@ ul {
     border-radius: 20px;
 }
 .top {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 .bottom, .left-header, .right-header{
     display: flex;
     justify-content: space-between;
 }
+.account-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .right-header{
-    width: 50%;
-    justify-content: space-between;
+    width: 40%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.account-info p {
+    font-size: 24px;
+    font-weight: bold;
 }
 input {
-    max-height: 30px;
+    max-height: 40px;
+    width: 80%;
     border-radius: 10px;
 }
 button {
-    width: 15%;
-    padding: 10px;
+    width: 100px;
+    max-height: 50px;
+    padding: 5px;
     border-radius: 20px;
+    font-size: 18px;
     background-color: blue;
     color: white;
     border-style: none;
@@ -122,9 +136,27 @@ button {
     width: 30px;
     height: 30px;
 }
+.top img {
+    width: 30px;
+    height: 30px;
+}
+.left-header img {
+    width: 75px;
+    height: 75px;
+}
+.greeting {
+    text-align: left;
+}
 .logo h1 {
     display: inline;
     
+}
+.account-info .profile-pic {
+    width: 50px;
+    height: 50px;
+}
+.account-name {
+    font-size: 30px;
 }
 .logo {
     display: flex;
@@ -141,6 +173,15 @@ button {
 }
 .settings {
     margin-top: 50px;
+}
+.search {
+    align-self: center;
+    width: 40%;
+}
+.account-info {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
 }
 /*ul {
     list-style: none;
