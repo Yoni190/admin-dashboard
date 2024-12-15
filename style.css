@@ -111,10 +111,36 @@ button {
     display: grid;
     height: 50%;
     grid-template-rows: 1fr 1fr;
+    font-size: 20px;
 }
 .boring-stuff {
     grid-row-start: 2;
     grid-row-end: 3;
+}
+.menu img {
+    display: inline;
+    width: 30px;
+    height: 30px;
+}
+.logo h1 {
+    display: inline;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 10px;
+}
+.menu img {
+    justify-self: end;
+}
+.settings {
+    margin-top: 50px;
 }
 /*ul {
     list-style: none;
